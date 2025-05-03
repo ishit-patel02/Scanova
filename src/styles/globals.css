@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Awesome icons */
+.fas, .far, .fab {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(50px, 50px) rotate(5deg); }
+    66% { transform: translate(-50px, 50px) rotate(-5deg); }
+  }
+  .dark {
+    --tw-gradient-from: #111827;
+    --tw-gradient-to: #1f2937;
+  }
+  
+  .dark .app-title {
+    background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+  }
+  
+  .dark .upload-container {
+    background-color: #374151;
+    border-color: #4b5563;
+  }
+  
+  .dark .result-container {
+    background-color: #1f2937;
+    color: #f3f4f6;
+  }
+  /* Add to globals.css */
+.speak-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.speak-button:hover:not(:active) {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.speak-button:active {
+  transform: scale(0.95);
+}
+
+.dark .speak-button {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
