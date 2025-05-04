@@ -52,7 +52,7 @@ Scanova is an user-friendly web application designed to make handwritten or prin
 
 ### Prerequisites
 - Python 3.8+
-- Node.js (for frontend)
+- React + Vite (for frontend)
 - Tesseract OCR installed on your system
 
 ## Screenshots 📸
